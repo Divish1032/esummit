@@ -1,0 +1,27 @@
+
+
+@media (max-width:576px){
+    .dsn-grid-info-wrapper {
+        top: -71px!important;
+    
+    position: relative!important;
+    }
+
+    .dsn-grid-info-wrapper .title .word__wrapper{
+        font-size: 32px!important;
+
+width: max-content!important;
+    }
+    .dsn-grid-info-wrapper .custom-btn{
+        top: 60px;
+    }
+
+}
+
+@media (min-width:700px){
+    .videopp{
+        max-width: 700px!important;
+    
+    margin: 0 auto!important;
+    }
+    }
