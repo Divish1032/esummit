@@ -589,9 +589,7 @@
             progress_slider.css({left: e.pageX, top: e.pageY});
 
         });
-        $('.dsn-grid-root a').on('click', function (e) {
-            e.preventDefault();
-        });
+       
 
 
         function convertTextLine(text, append) {
@@ -873,55 +871,7 @@
 
         });
 
-        dsn_info_click.on('click', function (e) {
-            e.preventDefault();
-            var _parent = $(this).parent('.dsn-slider-active');
-            var id = _parent.data('id');
-            var url = _parent.data('url');
-            tlm_progress.pause();
-            $('body').attr('data-dsn-grid-mousemove', "true");
-            mouseMove();
-
-            beforeSend(id);
-
-            function beforeSend(id) {
-
-                if (tlMoveUp.isActive()) {
-                    return;
-                }
-                var e_img = dsn_info_current.find('.slick-active[data-id="' + id + '"]');
-
-                var img_src = e_img.attr('data-image-src');
-                var header = $('<header class="header-project cover-bg " data-overlay="2"></header>');
-                header.css({
-                    position: 'absolute',
-                    'background-image': 'url("' + img_src + '")',
-                    width: e_img.width(),
-                    height: '100%',
-                    top: 0,
-                    left: e_img.offset().left
-                });
-
-                body.append(header);
-                tlMoveUp.staggerTo([dsn_info, dsn_info_prev, $('.dsn-grid-nav-box')], 1, {
-                    ease: Back.easeIn.config(1.7),
-                    y: '-100%',
-                    opacity: 0
-                }).to(header, 1, {
-                    ease: Back.easeIn.config(1.7), width: '100%', left: 0, onStart: function () {
-                        TweenMax.to(dsn_info_current, .1, {opacity: 0});
-                    },
-                    onComplete: function () {
-                        href = url;
-                        ajaxProject(id, url, header)
-                    }
-                });
-
-
-            }
-
-
-        });
+      
 
 
     }
@@ -1296,9 +1246,7 @@
                 }
             );
 
-            $('.site-header .custom-drop-down > a, .dsn-grid-root a').on('click', function (e) {
-                e.preventDefault();
-            });
+            
 
             var toggleClass = function toggleClass(element, stringClass) {
                 if (element.classList.contains(stringClass)) element.classList.remove(stringClass); else element.classList.add(stringClass);
