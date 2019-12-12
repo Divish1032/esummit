@@ -246,7 +246,7 @@
 }
 
 .section-padding {
-  padding-top: 100px !important;
+  padding-top: 100px!important;
   padding-bottom: 100px !important;
 }
 
@@ -3049,21 +3049,11 @@ a.single-image {
 
 .proj-container .box-im .caption {
   margin: 0px;
-  vertical-align: top;
-  right: calc(15% - -31px);
-  bottom: 0px;
-  padding-top: 10px;
-  display: inline-block;
-  -webkit-writing-mode: vertical-lr;
-  -ms-writing-mode: tb-lr;
-  writing-mode: vertical-lr;
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
+  
   font-family: "Playfair Display", serif;
   color: #fff;
   letter-spacing: 2px;
-  font-size: 12px;
+  font-size: 17px;
   position: absolute;
 }
 

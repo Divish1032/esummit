@@ -157,19 +157,18 @@ main {
 	position: relative;
 	padding: 0 1em;
 	width: 100%;
-	max-width: 1000px;
-	display: grid;
-	grid-template-columns: repeat(var(--grid-columns), 1fr);
+	max-width: 1089px;
 }
 
 .grid__item {
-	padding: 0 4vw;
-	margin: 0 0 12vh;
+	border: 1px white solid;
+	padding: 60px 0px;
+	width: 300px;
+	margin: 23px 22px;
+	display: inline-block;
 }
 
-.grid__item:nth-child(odd) .product {
-	margin-top: -8em;
-}
+
 
 .product {
 	padding-top: 10em;

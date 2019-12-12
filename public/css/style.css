@@ -16,6 +16,27 @@ width: max-content!important;
         top: 60px;
     }
 
+    .product__title{
+        margin-top: 25px!important;
+    }
+    .product img{
+        margin-top: 15px!important;
+    }
+    .grid__item{
+        height: 260px!important;
+    }
+    .filter{
+        display: block !important;
+        margin-top: 22px !important;
+        font-size: 14px !important;
+    }
+    .details__img{
+        display: none;   
+    }
+    .details__description{
+        max-width: 85%!important;
+        text-align: justify!important;
+    }
 }
 
 @media (min-width:700px){
