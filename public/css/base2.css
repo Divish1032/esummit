@@ -198,7 +198,7 @@ main {
 
 .product__title {
 	position: relative;
-	margin: 0.5em 0 0;
+	margin: 1em 0 0;
 	font-size: 20px;
 	top: 35px;
 	color: white;
@@ -486,4 +486,11 @@ main {
 	.dummy-menu {
 		margin: 1.75em 1.5em 0 0;
 	}
+}
+
+
+.addhover {
+	width: 210px;
+	height: 210px;
+	transition-duration: 0.5s;
 }
